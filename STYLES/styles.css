@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP&display=swap');
+* {
+    background-color: #000602;
+    color: #EADFD3;
+    font-family: "Noto Serif JP"; font-size: 16px; font-weight: normal;
+    scroll-behavior: smooth;
+    vertical-align: middle;
+}
+h1 {
+    background-color: transparent;
+    color: #EADFD3;
+    text-align: center;
+    font-size: 28px; font-weight: 100;
+    line-height: 68px;
+    position: absolute;
+    margin-top: 152px; margin-left: 430px;
+}
+h2 {
+    background-color: transparent;
+    color: #AE0C02;
+    text-align: center;
+    font-family: "Genos"; font-size: 40px; font-weight: 400;
+}
+h3 {
+    background-color: transparent;
+    color: #EADFD3;
+    font-size: 14px; font-weight: bold;
+}
+h4 {
+    background-color: #28231D;
+    color: #EADFD3;
+    font-family: "Genos"; font-size: 22px; font-weight: 500;
+}
+p {
+    background-color: transparent;
+    text-align: center;
+}
+strong {
+    font-family: "Noto Serif JP"; font-size: 16px; font-weight: bolder;
+    vertical-align: top;
+}
+em {
+    font-family: "Noto Serif JP"; font-size: 16px; font-weight: lighter;
+    vertical-align: top;
+}
+nav {
+    text-decoration-line: none;
+    background-color: #28231D;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    z-index: 9999;
+}
+header {
+    background-image: url(../IMG/rolls.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 25px; margin-top: 40px;
+    height: 550px;
+}
+a{
+    color: #EADFD3;
+    background-color: #28231D;
+    text-decoration: none;
+    vertical-align: top;
+    padding: 8px;
+    margin-left: 8px; margin-right: 8px;
+}
+a:hover {
+    color: #AE0C02;
+    transition: 300ms;
+}
+button {
+    background-color: #AE0C02;
+    padding-left: 8px; padding-right: 8px; padding-bottom: 4px;
+    margin: 20px;
+    border-radius: 12px;
+    width: 160px;
+    border: none;
+    filter: drop-shadow(0 4px 8px #151515)
+}
+button:hover {
+    background-color: #E13B31;
+    transition: 400ms;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input, select {
+    margin: 20px;
+    padding-left: 10px;
+}
+textarea {
+    margin: 20px;
+    width: 400px;
+    padding-left: 10px;
+}
+label {
+    margin: 4px;
+    font-size: 14px;
+}
+footer {
+    background-color: #28231D;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 80px;
+    padding-top: 40px; padding-bottom: 40px;
+}
+.nav-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #28231D;
+    top: 0;
+}
+.contenedor-logo, .contenedor-columna-footer, .contenedor-mi-foto {
+    background-color: #28231D;
+}
+.logo {
+    width: 180px;
+    height: 48px;
+    background-color: #28231D;
+    padding-left: 8px; padding-right: 8px;
+    margin-left: 8px; margin-right: 8px;
+}
+.seccion-destacada {
+    color: #AE0C02;
+    font-weight: bold;
+}
+.strong-header {
+    background-color: transparent;
+    color: #EADFD3;
+    font-family: "Genos"; font-size: 50px; font-weight: 600;
+}
+.sobre-nosotros {
+    height: 250px;
+}
+.descripcion-local {
+    background-color: transparent;
+    /* text-align: left; */
+    margin-left: 80px; margin-right: 80px; margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .fila1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+        .bloque1 { grid-area: 1 / 1 / 2 / 2; margin-right: 40px;}
+            .bloque1 p { text-align: right; }
+        .foto1 { grid-area: 1 / 2 / 2 / 3; }
+    .fila2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+        .foto2 { grid-area: 2 / 1 / 3 / 2; }
+        .bloque2 { grid-area: 2 / 2 / 3 / 3; margin-left: 40px;}
+            .bloque2 p { text-align: left;}
+    .fila3 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+        .foto3 { grid-area: 3 / 1 / 4 / 2; }
+        .bloque3 { grid-area: 3 / 2 / 4 / 3; margin-right: 40px;}
+            .bloque3 p { text-align: right; }
+    .foto-conocenos { border-radius: 12px; filter: drop-shadow(0 4px 10px #131313); }
+.el-espacio-seccion {
+    height: 380px;
+}
+.galeria-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    display: flex;
+    justify-content: center;
+}
+    .galeria-1 { grid-area: 1 / 1 / 2 / 2; }
+    .galeria-2 { grid-area: 1 / 2 / 2 / 3; }
+    .galeria-3 { grid-area: 1 / 3 / 2 / 4; }
+    .fotos-del-local {
+        border-radius: 12px;
+        transition: 500ms;
+        filter: drop-shadow(0 4px 10px #131313);
+    }
+    .fotos-del-local:hover {
+        width: 270px;
+        height: 270px;
+        transform: scale(1.1);
+    }
+.recomendacion {
+    background-color: transparent;
+    text-align: center;
+    background-image: url(../IMG/temaki.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.menu-de-pasos {
+    background-color: transparent;
+    background-image: url(../IMG/nigiri.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 250px;
+}
+.menu-de-pasos ul {
+    background-color: transparent;
+    list-style: none;
+}
+.menu-de-pasos ul li {
+    background-color: transparent;
+    padding-top: 4px; padding-bottom: 4px;
+}
+.botones-recomendacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.boton-menu {
+    background-color: #AE0C02;
+    padding: 8px;
+    margin-left: 16px; margin-right: 16px;
+    border-radius: 12px;
+    filter: drop-shadow(0 4px 8px #151515);
+}
+.boton-menu:hover {
+    background-color: #E13B31;
+    transition: 400ms;
+}
+.boton-menu a {
+    background-color: transparent;
+}
+.boton-menu a:hover {
+    color: #EADFD3;
+}
+.boton-reservas {
+    border: solid 2px; border-color: #28231D;
+    padding: 8px;
+    margin-left: 16px; margin-right: 16px;
+    border-radius: 12px;
+    filter: drop-shadow(0 4px 8px #151515);
+}
+.boton-reservas:hover {
+    border: solid 2px; border-color: #736555;
+    transition: 400ms;
+}
+.boton-reservas a {
+    background-color: transparent;
+}
+.boton-reservas a:hover {
+    color: #EADFD3;
+}
+.iconos-botones {
+    background-color: transparent;
+    margin-left:8px; margin-right: 8px;
+}
+.galeria-de-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+    .foto1 { grid-area: 1 / 1 / 2 / 2; }
+    .foto2 { grid-area: 1 / 2 / 2 / 3; }
+    .foto3 { grid-area: 1 / 3 / 2 / 4; }
+    .foto4 { grid-area: 1 / 4 / 2 / 5; }
+    .foto5 { grid-area: 2 / 1 / 3 / 2; }
+    .foto6 { grid-area: 2 / 2 / 3 / 3; }
+    .foto7 { grid-area: 2 / 3 / 3 / 4; }
+    .foto8 { grid-area: 2 / 4 / 3 / 5; }
+    .foto9 { grid-area: 3 / 1 / 4 / 2; }
+    .foto10 { grid-area: 3 / 2 / 4 / 3; }
+    .foto11 { grid-area: 3 / 3 / 4 / 4; }
+    .foto12 { grid-area: 3 / 4 / 4 / 5; }
+.menu {
+    background-color: transparent;
+    background-image: url(../IMG/nigiri.webp);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 250px;
+}
+    .menu ul, .menu ul li {
+        background-color: transparent;
+        text-align: center;
+        list-style: none;
+    }
+    .menu-completo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+.placeholder {
+    font-size: 14px;
+    height: 32px;
+    border-radius: 8px;
+    width: 400px;
+}
+::placeholder {
+    padding-left: 4px;
+  }
+    .placeholder-mensaje {
+        font-size: 14px;
+        border-radius: 8px;
+        padding-top: 8px;
+    }
+.contenedor-playlist {
+    margin-top: 40px; margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.spotify {
+    border-radius: 12px;
+    height: 152px; width: 75%;
+    border: none;
+}
+.bloque-ubicacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+}
+    .caja-mapa { grid-area: 1 / 1 / 2 / 2; }
+    .caja-lista-ubicacion { grid-area: 1 / 2 / 2 / 4;
+        border: solid 2px; border-color: #28231D;
+        border-radius: 24px;
+        width: 400px;
+        filter: drop-shadow(0 4px 8px #131313)}
+.mapa {
+    width: 400px; height: 300px;
+    margin-left: 200px;
+    border-radius: 24px;
+}
+.caja-lista-ubicacion ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 250px;
+}
+.caja-lista-ubicacion ul li {
+    list-style: none;
+    line-height: 8px;
+}
+.iconos-encontranos {
+    width: 24px; height: 24px;
+    margin-right: 16px;
+    margin-bottom: 14px; margin-top: 14px;
+}
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .review-1 { grid-area: 1 / 1 / 3 / 2;
+        background-color: #28231D; border-radius: 24px; padding: 24px; }
+    .review-2 { grid-area: 1 / 2 / 3 / 3;
+        background-color: #28231D; border-radius: 24px; padding: 24px; }
+    .review-3 { grid-area: 1 / 3 / 3 / 4;
+        background-color: #28231D; border-radius: 24px; padding: 24px; }
+    .parrafos-review{
+        background-color: #28231D;
+    }
+    .texto-review {
+        background-color: #28231D;
+        font-size: 14px;
+        line-height: 6px;
+        text-align: left;
+    }
+    .encabezado-review {
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .puntuacion {
+        background-color: transparent;
+        width: 80px;
+        height: 16px;
+        margin-left: 16px; margin-right: 16px;
+    }
+.mis-datos, .fuentes, .como-contactarme {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.unsplash {
+    margin: 0;
+    padding: 0;
+}
+.mi-foto {
+    width: 150px; height: 150px;
+    border-radius: 150px;
+}
+.iconos-contactarme {
+    background-color: #28231D;
+    width: 24px; height: 24px;
+}
+#home #conocenos #galeria #reservas {
+    background-color: transparent;
+    text-align: center;
+}
+#contactanos {
+    height: 450px;
+}
+#servicios {
+    background-color: transparent;
+    text-align: center;
+    background-image: url(../IMG/temaki.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+}
